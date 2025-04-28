@@ -119,7 +119,7 @@ async def send_polls(update: Update, context: ContextTypes.DEFAULT_TYPE):
             print(f"Error sending question {idx}: {e}")
 
 async def main():
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    app = ApplicationBuilder().token(7972418774:AAFgeS8Nw15K3tbY7akJ7im6cQHXZbeO3Ko).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.Document.ALL, handle_file))
