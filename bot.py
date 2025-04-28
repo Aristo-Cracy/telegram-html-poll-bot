@@ -10,11 +10,11 @@ BOT_TOKEN = os.getenv("7972418774:AAFgeS8Nw15K3tbY7akJ7im6cQHXZbeO3Ko")
 GROUP_ID = int(os.getenv("GROUP_ID", "-4671966297"))  
 OWNER_ID = int(os.getenv("OWNER_ID", "5218536687"))  
 
-Delay between polls (in seconds)
+# Delay between polls (in seconds)
 
 POLL_DELAY = 5
 
-Temporary storage
+# Temporary storage
 
 pending_polls = {}
 
