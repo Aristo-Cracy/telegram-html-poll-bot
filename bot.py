@@ -5,7 +5,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Cal
 from bs4 import BeautifulSoup
 
 # Bot token, group ID, and owner ID placeholders
-BOT_TOKEN = os.getenv("7972418774:AAFgeS8Nw15K3tbY7akJ7im6cQHXZbeO3Ko")  # Add your bot token here or set as env variable
+#BOT_TOKEN = os.getenv("7972418774:AAFgeS8Nw15K3tbY7akJ7im6cQHXZbeO3Ko")  # Add your bot token here or set as env variable
+BOT_TOKEN = "7786966143:AAHyWWfnc37KMeva8QEmVC4NIZUYjrX8AqY"
 GROUP_ID = int(os.getenv("GROUP_ID", "-4671966297"))  # Replace with your group ID
 OWNER_ID = int(os.getenv("OWNER_ID", "5218536687"))  # Replace with your Telegram user ID
 
@@ -119,7 +120,7 @@ async def send_polls(update: Update, context: ContextTypes.DEFAULT_TYPE):
             print(f"Error sending question {idx}: {e}")
 
 async def main():
-    app = ApplicationBuilder().token(7972418774:AAFgeS8Nw15K3tbY7akJ7im6cQHXZbeO3Ko).build()
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.Document.ALL, handle_file))
